@@ -14,20 +14,20 @@ EDTiA.H2(
 )
 }
 \arguments{
-\item{Comm.Microbe}{PARAM_DESCRIPTION}
+\item{Comm.Microbe}{Sample/Microbe matrix with samples in the rows and Microbial species in the columns (compositional/abundant data).}
 
-\item{Comm.DOM}{PARAM_DESCRIPTION}
+\item{Comm.DOM}{Sample/DOM matrix with samples in the rows and DOM molecules in the columns (compositional/abundant data).}
 
-\item{occurrence.threshold}{PARAM_DESCRIPTION, Default: 0.5}
+\item{occurrence.threshold}{The threshold of retaining bacterial species or DOM molecules observed in more than half of the total samples. Default: 0.5.}
 
-\item{threshold.r}{PARAM_DESCRIPTION, Default: 0.3}
+\item{threshold.r}{The threshold of including correlations between DOM molecules and bacterial species in bipartite networks. Defaulted: 0.3.}
 
-\item{N}{PARAM_DESCRIPTION, Default: 100}
+\item{N}{Number of null models to be generated; defaults to 100 (more might be better,less probably not).}
 
-\item{Null.model}{PARAM_DESCRIPTION, Default: 'swap.web'}
+\item{Null.model}{Null model type. Can be given as an integer or name: 1/"r2dtable", 2/"swap.web", 3/"vaznull", 4/"shuffle.web"; allows for partial match of names.}
 }
 \value{
-OUTPUT_DESCRIPTION
+Returns a data.frame, which contains standardised H2', Observed H2', P-value and Network type.
 }
 \description{
 This function calculates the network-level specialization of all interacting trophic levels in DOM-microbe bipartite networks, including full, negative and positive networks.

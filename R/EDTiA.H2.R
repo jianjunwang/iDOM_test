@@ -10,13 +10,34 @@
 #' @param threshold.r The threshold of including correlations between DOM molecules and bacterial species in bipartite networks. Defaulted: 0.3.
 #' @param N Number of null models to be generated; defaults to 100 (more might be better,less probably not).
 #' @param Null.model Null model type. Can be given as an integer or name: 1/"r2dtable", 2/"swap.web", 3/"vaznull", 4/"shuffle.web"; allows for partial match of names.
-#' @return Returns a data.frame, which contains standardised H2', Observed H2', P-value and Network type. 
-#' @details DETAILS
+#' @return Returns a data.frame, which contains standardised H2', Observed H2', P-value and Network type. Standardised: Standardised H2'. It is standardised by using a null modelling approach. 
+#' Observed: Observed H2'. It ranges between 0 (complete generalization) and 1 (complete specialization).p.value: The significance of differences between observed and random H2'.Network.type: Network type. Can be given as a name: Full (full network), 
+#' Negative (negative network), Positive (positive network).
+#' @details H2' is a network-level property to describe how much the two trophic 
+#' levels are interacting with each other in a bipartite network. For example,
+#' H2' is used to quantify the specialization of DOM-microbe associations at a 
+#' network level. Specifically, elevated H2' values convey that there is a high 
+#' degree of specialization between DOM and microbes. By contrast, lower H2' 
+#' values reflect a more generalized bipartite network where different DOM 
+#' molecules can be used by a large range of bacterial taxa.
+#' @references Hu A, Choi M, Tanentzap AJ, Liu J, Jang K-S, Lennon JT, Liu Y, Soininen J, Lu X, Zhang Y, Shen J, Wang J. 
+#'   Quantifying microbial associations of dissolved organic matter under global change. \emph{bioRxiv}, 2021.
+#' @references Hu A, Choi M, Tanentzap AJ, Liu J, Jang K-S, Lennon JT, Liu Y, Soininen J, Lu X, Zhang Y, Shen J, Wang J. 
+#'   Quantifying the associations between dissolved organic matter and microbes
+#'   under global change. \emph{Nature communications}, 2022.
 #' @examples 
 #' \dontrun{
-#' if(interactive()){
-#'  #EXAMPLE1
-#'  }
+#' # Example data of a Microbial compositional table (50 samples by 100 bacterial species)
+#' Bac.data
+#' # Example data of a DOM compositional table (50 samples by 100 DOM molecules)
+#' DOM.data
+#' # Calculation of H2' index
+#' DOM.H2(Comm.Bacteria = Bac.data,
+#'        Comm.DOM = DOM.data,
+#'        occurrence.threshold = 0.5,
+#'        threshold.r = 0.3,
+#'        N = 100,
+#'        Null.model = "swap.web")
 #' }
 #' @seealso 
 #'  \code{\link[SpiecEasi]{sparcc}}
