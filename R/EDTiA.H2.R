@@ -48,7 +48,7 @@
 #' @importFrom bipartite nullmodel networklevel
 
 
-EDTiA.H2 <- function(Comm.Microbe,Comm.DOM,occurrence.threshold = 0.5,threshold.r = 0.3,N = 100,Null.model = "swap.web") {
+DOM.H2 <- function(Comm.Microbe,Comm.DOM,occurrence.threshold = 0.5,threshold.r = 0.3,N = 100,Null.model = "swap.web") {
   library(vegan)
   library(bipartite)
   
