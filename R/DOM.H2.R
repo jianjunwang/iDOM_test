@@ -78,12 +78,12 @@ DOM.H2 <- function(Comm.Microbe,Comm.DOM,occurrence.threshold = 0.5,threshold.r 
   colnames(adj.cor.Bac.DOM) = colnames(Comm.Bac.DOM)
   rownames(adj.cor.Bac.DOM) = colnames(Comm.Bac.DOM)
   
-  sel.adj.cor.Bac.DOM = adj.cor.Bac.DOM[grep("Bac_",rownames(adj.cor.Bac.DOM)),
-                                        grep("DOM_",colnames(adj.cor.Bac.DOM))]
+  sel.adj.cor.Bac.DOM = adj.cor.Bac.DOM[grep("DOM_",rownames(adj.cor.Bac.DOM)),
+                                        grep("Bac_",colnames(adj.cor.Bac.DOM))]
   
   cor.Bac.DOM.int = round(10000 * sel.adj.cor.Bac.DOM, 0)
   
-  classes <- c("Full","Positive","Nagative")
+  classes <- c("Full","Positive","Negative")
   
   ii = 1;jj = 1;i = 1
   for (ii in 1:length(classes)) {
@@ -108,7 +108,7 @@ DOM.H2 <- function(Comm.Microbe,Comm.DOM,occurrence.threshold = 0.5,threshold.r 
       site.Bac <- Comm.Bac.DOM.site[,grep("Bac_",colnames(Comm.Bac.DOM.site))];dim(site.Bac)
       site.DOM <- Comm.Bac.DOM.site[,grep("DOM_",colnames(Comm.Bac.DOM.site))];dim(site.DOM)
       
-      adj.cor.int.site = adj.cor.int[colnames(site.Bac),colnames(site.DOM)];dim(adj.cor.int.site)
+      adj.cor.int.site = adj.cor.int[colnames(site.DOM),colnames(site.Bac)];dim(adj.cor.int.site)
       
       nulls.site = list()
       
@@ -116,7 +116,7 @@ DOM.H2 <- function(Comm.Microbe,Comm.DOM,occurrence.threshold = 0.5,threshold.r 
         colnames(nulls[[i]]) = colnames(adj.cor.int)
         rownames(nulls[[i]]) = rownames(adj.cor.int)
         
-        nulls.site[[i]] <- nulls[[i]][colnames(site.Bac),colnames(site.DOM)];dim(nulls.site[[i]])
+        nulls.site[[i]] <- nulls[[i]][colnames(site.DOM),colnames(site.Bac)];dim(nulls.site[[i]])
       }
       
       index.obs = bipartite::networklevel(adj.cor.int.site, weighted = T, index = weighted.indices) 
@@ -139,7 +139,7 @@ DOM.H2 <- function(Comm.Microbe,Comm.DOM,occurrence.threshold = 0.5,threshold.r 
       }
       
       if (jj %% 5 == 0) {
-        print(paste0("Sample:",jj,"; ","Null model type:",classes[ii]))
+        print(paste0("Sample:",rownames(Comm.Bac.DOM)[jj],"; ","Null.model.type:",classes[ii]))
       }
     }
   }
