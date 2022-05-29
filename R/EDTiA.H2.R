@@ -114,7 +114,7 @@ EDTiA.H2 <- function(Comm.Bacteria,Comm.DOM,occurrence.threshold = 0.5,threshold
     #'   Null.model:Null model type. Can be given as an integer or name: 1/"r2dtable", 2/"swap.web", 3/"vaznull", 4/"shuffle.web"; allows for partial match of names.
     nulls <- bipartite::nullmodel(adj.cor.int, N = N, method = Null.model)
     
-    #### Select subnetworks of observed bipartite networks at each sample
+    #### Select subnetworks of observed networks at each sample
     for (jj in 1:nrow(Comm.Bac.DOM)) {
       Comm.Bac.DOM.site = Comm.Bac.DOM[jj,,drop = F];dim(Comm.Bac.DOM.site)
       Comm.Bac.DOM.site = Comm.Bac.DOM.site[,colSums(Comm.Bac.DOM.site) > 0];dim(Comm.Bac.DOM.site)
@@ -126,7 +126,7 @@ EDTiA.H2 <- function(Comm.Bacteria,Comm.DOM,occurrence.threshold = 0.5,threshold
       
       nulls.site = list()
       
-      #### Select subnetworks of null model bipartite networks at each sample
+      #### Select subnetworks of null model networks at each sample
       for (i in 1:N) {
         colnames(nulls[[i]]) = colnames(adj.cor.int)
         rownames(nulls[[i]]) = rownames(adj.cor.int)
@@ -134,14 +134,6 @@ EDTiA.H2 <- function(Comm.Bacteria,Comm.DOM,occurrence.threshold = 0.5,threshold
         nulls.site[[i]] <- nulls[[i]][colnames(site.Bac),colnames(site.DOM)];dim(nulls.site[[i]])
         # print(dim(nulls.site[[i]]))
       }
-      
-      #### The calculation of H2'.H2' is a network-level property to describe how much the two trophic
-      #'   levels are interacting with each other in a bipartite network. For example,
-      #'   H2' is used to quantify the specialization of DOM-microbe associations at a
-      #'   network level. Specifically, elevated H2' values convey that there is a high
-      #'   degree of specialization between DOM and microbes. By contrast, lower H2'
-      #'   values reflect a more generalized bipartite network where different DOM
-      #'   molecules can be used by a large range of bacterial taxa.
       
       weighted.indices = c("H2")
       
