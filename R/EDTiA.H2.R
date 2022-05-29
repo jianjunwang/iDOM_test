@@ -56,6 +56,8 @@
 #' @importFrom SpiecEasi sparcc
 #' @importFrom bipartite nullmodel networklevel
 
+
+
 EDTiA.H2 <- function(Comm.Bacteria,Comm.DOM,occurrence.threshold = 0.5,threshold.r = 0.3,N = 100,Null.model = "swap.web") {
   library(vegan) # Community Ecology Package
   
