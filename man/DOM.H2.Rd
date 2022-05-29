@@ -22,7 +22,7 @@ EDTiA.H2(
 
 \item{threshold.r}{The threshold of including correlations between DOM molecules and bacterial species in bipartite networks. Defaulted: 0.3.}
 
-\item{N}{Number of null models to be generated; defaults to 100 (more might be better,less probably not).}
+\item{N}{Number of null models to be generated; defaults to 100 (more might be better, less probably not).}
 
 \item{Null.model}{Null model type. Can be given as an integer or name: 1/"r2dtable", 2/"swap.web", 3/"vaznull", 4/"shuffle.web"; allows for partial match of names.}
 }
@@ -46,11 +46,11 @@ molecules can be used by a large range of bacterial taxa.
 \examples{
 \dontrun{
 # Example data of a Microbial compositional table (50 samples by 100 bacterial species)
-Bac.data
+Microbial.data
 # Example data of a DOM compositional table (50 samples by 100 DOM molecules)
 DOM.data
 # Calculation of H2' index
-DOM.H2(Comm.Bacteria = Bac.data,
+DOM.H2(Comm.Microbe = Microbial.data,
        Comm.DOM = DOM.data,
        occurrence.threshold = 0.5,
        threshold.r = 0.3,

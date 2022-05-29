@@ -50,6 +50,7 @@
 
 EDTiA.H2 <- function(Comm.Microbe,Comm.DOM,occurrence.threshold = 0.5,threshold.r = 0.3,N = 100,Null.model = "swap.web") {
   library(vegan)
+  library(bipartite)
   
   Comm.Microbe.total = 10000 * decostand(Comm.Microbe, method = "total")
   Comm.Microbe.total = round(Comm.Microbe.total, 0)  
