@@ -8,8 +8,8 @@
 #' @references Hu A, Choi M, Tanentzap AJ, Liu J, Jang K-S, Lennon JT, et al.
 #' Quantifying the associations between dissolved organic matter and microbes under global change. \emph{Nature communications} 2022.
 #' @source \url{https://doi.org/10.1038/ncomms13960}.
-#' @examples data(Bac.data)
-"Bac.data"
+#' @examples data(Microbial.data)
+"Microbial.data"
 
 
 #' DOM molecules data
