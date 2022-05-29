@@ -36,7 +36,7 @@ install.packages("file_path/package_file_name.extension",repos = NULL, type = "s
 
 ## Key functions in iDOM package
 
-[EDTiA.H2](https://doi.org/10.1101/2021.08.12.456177): Calculates the
+[DOM.H2](https://doi.org/10.1101/2021.08.12.456177): Calculates the
 network-level specialization of all interacting trophic levels in
 DOM-microbe bipartite networks, including full, negative and positive
 networks.
