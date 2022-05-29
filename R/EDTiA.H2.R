@@ -8,7 +8,7 @@
 #' @param Comm.DOM Sample/DOM matrix with samples in the rows and DOM molecules in the columns (compositional/abundant data).
 #' @param occurrence.threshold The threshold of retaining bacterial species or DOM molecules observed in more than half of the total samples. Default: 0.5.
 #' @param threshold.r The threshold of including correlations between DOM molecules and bacterial species in bipartite networks. Defaulted: 0.3.
-#' @param N Number of null models to be generated; defaults to 100 (more might be better,less probably not).
+#' @param N Number of null models to be generated; defaults to 100 (more might be better, less probably not).
 #' @param Null.model Null model type. Can be given as an integer or name: 1/"r2dtable", 2/"swap.web", 3/"vaznull", 4/"shuffle.web"; allows for partial match of names.
 #' @return Returns a data.frame, which contains standardised H2', Observed H2', P-value and Network type. Standardised: Standardised H2'. It is standardised by using a null modelling approach. 
 #' Observed: Observed H2'. It ranges between 0 (complete generalization) and 1 (complete specialization).p.value: The significance of differences between observed and random H2'.Network.type: Network type. Can be given as a name: Full (full network), 
@@ -28,11 +28,11 @@
 #' @examples 
 #' \dontrun{
 #' # Example data of a Microbial compositional table (50 samples by 100 bacterial species)
-#' Bac.data
+#' Microbial.data
 #' # Example data of a DOM compositional table (50 samples by 100 DOM molecules)
 #' DOM.data
 #' # Calculation of H2' index
-#' DOM.H2(Comm.Bacteria = Bac.data,
+#' DOM.H2(Comm.Microbe = Microbial.data,
 #'        Comm.DOM = DOM.data,
 #'        occurrence.threshold = 0.5,
 #'        threshold.r = 0.3,
@@ -46,7 +46,6 @@
 #' @export 
 #' @importFrom SpiecEasi sparcc
 #' @importFrom bipartite nullmodel networklevel
-
 
 
 EDTiA.H2 <- function(Comm.Microbe,Comm.DOM,occurrence.threshold = 0.5,threshold.r = 0.3,N = 100,Null.model = "swap.web") {
