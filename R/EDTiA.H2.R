@@ -4,7 +4,7 @@
 
 #' @title The specialization index H2' of DOM-microbe associations
 #' @description This function calculates the network-level specialization of all interacting trophic levels in DOM-microbe bipartite networks, including full, negative and positive networks.
-#' @param Comm.Bacteria PARAM_DESCRIPTION
+#' @param Comm.Microbe PARAM_DESCRIPTION
 #' @param Comm.DOM PARAM_DESCRIPTION
 #' @param occurrence.threshold PARAM_DESCRIPTION, Default: 0.5
 #' @param threshold.r PARAM_DESCRIPTION, Default: 0.3
@@ -28,26 +28,26 @@
 
 
 
-EDTiA.H2 <- function(Comm.Bacteria,Comm.DOM,occurrence.threshold = 0.5,threshold.r = 0.3,N = 100,Null.model = "swap.web") {
+EDTiA.H2 <- function(Comm.Microbe,Comm.DOM,occurrence.threshold = 0.5,threshold.r = 0.3,N = 100,Null.model = "swap.web") {
   library(vegan)
   
-  Comm.Bacteria.total = 10000 * decostand(Comm.Bacteria, method = "total")
-  Comm.Bacteria.total = round(Comm.Bacteria.total, 0)  
-  colnames(Comm.Bacteria.total) = paste("Bac", colnames(Comm.Bacteria.total), sep="_")
+  Comm.Microbe.total = 10000 * decostand(Comm.Microbe, method = "total")
+  Comm.Microbe.total = round(Comm.Microbe.total, 0)  
+  colnames(Comm.Microbe.total) = paste("Bac", colnames(Comm.Microbe.total), sep="_")
   
   Comm.DOM.total = 10000 * decostand(Comm.DOM, method = "total")
   Comm.DOM.total = round(Comm.DOM.total, 0)
   colnames(Comm.DOM.total) = paste("DOM", colnames(Comm.DOM.total), sep="_")
   
   ####
-  Comm.Bacteria.pa = decostand(Comm.Bacteria, method = "pa")
-  Comm.Bacteria.keep = Comm.Bacteria.total[, colSums(Comm.Bacteria.pa) >= nrow(Comm.Bacteria.pa) * occurrence.threshold]
+  Comm.Microbe.pa = decostand(Comm.Microbe, method = "pa")
+  Comm.Microbe.keep = Comm.Microbe.total[, colSums(Comm.Microbe.pa) >= nrow(Comm.Microbe.pa) * occurrence.threshold]
   
   Comm.DOM.pa = decostand(Comm.DOM, method = "pa")
   Comm.DOM.keep = Comm.DOM.total[, colSums(Comm.DOM.pa) >= nrow(Comm.DOM.pa) * occurrence.threshold]
   
-  if (identical(rownames(Comm.Bacteria.keep),rownames(Comm.DOM.keep))) {
-    Comm.Bac.DOM = cbind(Comm.Bacteria.keep, Comm.DOM.keep)
+  if (identical(rownames(Comm.Microbe.keep),rownames(Comm.DOM.keep))) {
+    Comm.Bac.DOM = cbind(Comm.Microbe.keep, Comm.DOM.keep)
   }
   
   ####

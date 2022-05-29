@@ -2,7 +2,7 @@
 % Please edit documentation in R/EDTiA.H2.R
 \name{EDTiA.H2}
 \alias{EDTiA.H2}
-\title{FUNCTION_TITLE}
+\title{The specialization index H2' of DOM-microbe associations}
 \usage{
 EDTiA.H2(
   Comm.Bacteria,
@@ -30,7 +30,7 @@ EDTiA.H2(
 OUTPUT_DESCRIPTION
 }
 \description{
-FUNCTION_DESCRIPTION
+This function calculates the network-level specialization of all interacting trophic levels in DOM-microbe bipartite networks, including full, negative and positive networks.
 }
 \details{
 DETAILS
