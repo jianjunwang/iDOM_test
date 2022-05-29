@@ -51,6 +51,7 @@
 DOM.H2 <- function(Comm.Microbe,Comm.DOM,occurrence.threshold = 0.5,threshold.r = 0.3,N = 100,Null.model = "swap.web") {
   library(vegan)
   library(bipartite)
+  library(SpiecEasi)
   
   Comm.Microbe.total = 10000 * decostand(Comm.Microbe, method = "total")
   Comm.Microbe.total = round(Comm.Microbe.total, 0)  
@@ -126,7 +127,7 @@ DOM.H2 <- function(Comm.Microbe,Comm.DOM,occurrence.threshold = 0.5,threshold.r 
       index.ses = (index.obs - index.rand.mean) / index.rand.sd
       praw = sum(index.null > index.obs) / length(index.null)
       index.obs.p = ifelse(praw > 0.5, 1-praw, praw)
-      index = data.frame(Index = names(index.obs), Observed = index.obs, Standardised = index.ses, P.value = index.obs.p,
+      index = data.frame(Index = names(index.obs), Observed = index.obs, Standardised = index.ses, p.value = index.obs.p,
                          Network.type = class, 
                          Sample = rownames(Comm.Bac.DOM.site))
       rownames(index) = NULL
