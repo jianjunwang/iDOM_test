@@ -54,7 +54,6 @@
 #' @rdname EDTiA.H2
 #' @export
 #' @importFrom SpiecEasi sparcc
-#' @importFrom bipartite nullmodel networklevel
 
 
 

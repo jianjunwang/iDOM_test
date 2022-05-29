@@ -4,18 +4,12 @@
 \name{iDOM-package}
 \alias{iDOM}
 \alias{iDOM-package}
-\title{iDOM: Package for Dissolved organic matter analysis}
+\title{iDOM: What the Package Does (One Line, Title Case)}
 \description{
-The \strong{iDOM} package provides tools for Dissolved organic matter (DOM) analysis. There are most basic functions used to study the assembly processes, transformation and microbial associations of DOM.
+What the package does (one paragraph).
 }
 \author{
-\strong{Maintainer}: Jianjun Wang \email{jjwang@niglas.ac.cn} (\href{https://orcid.org/0000-0001-7039-7136}{ORCID})
-
-Authors:
-\itemize{
-  \item Ang Hu \email{anghu@hunau.edu.cn} (\href{https://orcid.org/0000-0002-5755-2442}{ORCID})
-  \item Fanfan Meng \email{mengfanfan19@mails.ucas.ac.cn} (\href{https://orcid.org/0000-0001-5718-1621}{ORCID})
-}
+\strong{Maintainer}: First Last \email{first.last@example.com} (\href{https://orcid.org/YOUR-ORCID-ID}{ORCID})
 
 }
 \keyword{internal}
