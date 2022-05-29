@@ -2,8 +2,8 @@
 
 
 
-#' @title FUNCTION_TITLE
-#' @description FUNCTION_DESCRIPTION
+#' @title The specialization index H2' of DOM-microbe associations
+#' @description This function calculates the network-level specialization of all interacting trophic levels in DOM-microbe bipartite networks, including full, negative and positive networks.
 #' @param Comm.Bacteria PARAM_DESCRIPTION
 #' @param Comm.DOM PARAM_DESCRIPTION
 #' @param occurrence.threshold PARAM_DESCRIPTION, Default: 0.5

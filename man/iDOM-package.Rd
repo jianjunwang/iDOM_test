@@ -6,7 +6,7 @@
 \alias{iDOM-package}
 \title{iDOM: Package for Dissolved organic matter analysis}
 \description{
-The \strong{iDOM} package provides tools for Dissolved organic matter (DOM) analysis. There are most basic functions used to study the assembly processes, transformation and microbial associations of DOM.
+The \strong{iDOM} package provides tools for Dissolved organic matter (DOM) analysis. The package includes functions for analyzing the assembly processes, transformation and microbial associations of DOM.
 }
 \author{
 \strong{Maintainer}: Jianjun Wang \email{jjwang@niglas.ac.cn} (\href{https://orcid.org/0000-0001-7039-7136}{ORCID})
