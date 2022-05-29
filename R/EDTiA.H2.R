@@ -28,7 +28,7 @@
 
 
 
-DOM.H2 <- function(Comm.Bacteria,Comm.DOM,occurrence.threshold = 0.5,threshold.r = 0.3,N = 100,Null.model = "swap.web") {
+EDTiA.H2 <- function(Comm.Bacteria,Comm.DOM,occurrence.threshold = 0.5,threshold.r = 0.3,N = 100,Null.model = "swap.web") {
   library(vegan)
   
   Comm.Bacteria.total = 10000 * decostand(Comm.Bacteria, method = "total")
