@@ -57,9 +57,7 @@
 #' @importFrom bipartite nullmodel networklevel
 
 EDTiA.H2 <- function(Comm.Bacteria,Comm.DOM,occurrence.threshold = 0.5,threshold.r = 0.3,N = 100,Null.model = "swap.web") {
-  library(vegan) # Community Ecology Package    
-  # library(SpiecEasi) # Sparse Inverse Covariance for Ecological Statistical Inference
-  # library(bipartite) # Visualising Bipartite Networks and Calculating Some (Ecological) Indices
+  library(vegan) # Community Ecology Package
   
   #### Data normalization
   Comm.Bacteria.total = 10000 * decostand(Comm.Bacteria, method = "total")
