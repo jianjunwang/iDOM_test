@@ -83,7 +83,7 @@ EDTiA.H2 <- function(Comm.Bacteria,Comm.DOM,occurrence.threshold = 0.5,threshold
   sparcc.Bac.DOM <- SpiecEasi::sparcc(Comm.Bac.DOM, iter = 20, inner_iter = 10, th = 0.1)
   sparcc.cor.Bac.DOM = sparcc.Bac.DOM$Cor
   
-  #### The threshold of including correlations between DOM molecules and bacterial species in bipartite networks
+  #### The threshold of including correlations between DOM molecules and bacterial species in  networks
   adj.cor.Bac.DOM = ifelse(abs(sparcc.cor.Bac.DOM) > threshold.r, sparcc.cor.Bac.DOM, 0)
   
   colnames(adj.cor.Bac.DOM) = colnames(Comm.Bac.DOM)
@@ -110,7 +110,7 @@ EDTiA.H2 <- function(Comm.Bacteria,Comm.DOM,occurrence.threshold = 0.5,threshold
       adj.cor.int = ifelse(cor.Bac.DOM.int < 0, abs(cor.Bac.DOM.int), 0) 
     }
     
-    #### Calculate null model bipartite networks. N:Number of null models to be generated; defaults to 100 (more might be better,less probably not).
+    #### Calculate null model  networks. N:Number of null models to be generated; defaults to 100 (more might be better,less probably not).
     #'   Null.model:Null model type. Can be given as an integer or name: 1/"r2dtable", 2/"swap.web", 3/"vaznull", 4/"shuffle.web"; allows for partial match of names.
     nulls <- bipartite::nullmodel(adj.cor.int, N = N, method = Null.model)
     
