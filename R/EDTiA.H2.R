@@ -4,13 +4,13 @@
 
 #' @title The specialization index H2' of DOM-microbe associations
 #' @description This function calculates the network-level specialization of all interacting trophic levels in DOM-microbe bipartite networks, including full, negative and positive networks.
-#' @param Comm.Microbe PARAM_DESCRIPTION
-#' @param Comm.DOM PARAM_DESCRIPTION
-#' @param occurrence.threshold PARAM_DESCRIPTION, Default: 0.5
-#' @param threshold.r PARAM_DESCRIPTION, Default: 0.3
-#' @param N PARAM_DESCRIPTION, Default: 100
-#' @param Null.model PARAM_DESCRIPTION, Default: 'swap.web'
-#' @return OUTPUT_DESCRIPTION
+#' @param Comm.Microbe Sample/Microbe matrix with samples in the rows and Microbial species in the columns (compositional/abundant data).
+#' @param Comm.DOM Sample/DOM matrix with samples in the rows and DOM molecules in the columns (compositional/abundant data).
+#' @param occurrence.threshold The threshold of retaining bacterial species or DOM molecules observed in more than half of the total samples. Default: 0.5.
+#' @param threshold.r The threshold of including correlations between DOM molecules and bacterial species in bipartite networks. Defaulted: 0.3.
+#' @param N Number of null models to be generated; defaults to 100 (more might be better,less probably not).
+#' @param Null.model Null model type. Can be given as an integer or name: 1/"r2dtable", 2/"swap.web", 3/"vaznull", 4/"shuffle.web"; allows for partial match of names.
+#' @return Returns a data.frame, which contains standardised H2', Observed H2', P-value and Network type. 
 #' @details DETAILS
 #' @examples 
 #' \dontrun{

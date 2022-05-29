@@ -5,7 +5,7 @@
 \title{The specialization index H2' of DOM-microbe associations}
 \usage{
 EDTiA.H2(
-  Comm.Bacteria,
+  Comm.Microbe,
   Comm.DOM,
   occurrence.threshold = 0.5,
   threshold.r = 0.3,
@@ -14,7 +14,7 @@ EDTiA.H2(
 )
 }
 \arguments{
-\item{Comm.Bacteria}{PARAM_DESCRIPTION}
+\item{Comm.Microbe}{PARAM_DESCRIPTION}
 
 \item{Comm.DOM}{PARAM_DESCRIPTION}
 
