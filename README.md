@@ -45,15 +45,15 @@ networks.
 
 Wang J, Pan F, Soininen J, Heino J, Shen J. 2016. Nutrient enrichment
 modifies temperature-biodiversity relationships in large-scale field
-experiments. Nature Communications 7:1-9.
+experiments. ***Nature Communications*** 7:1-9.
 <https://doi.org/10.1038/ncomms13960>
 
 Hu A, Choi M, Tanentzap AJ, Liu J, Jang K-S, Lennon JT, Liu Y, Soininen
 J, Lu X, Zhang Y, Shen J, Wang J. 2021. Quantifying microbial
-associations of dissolved organic matter under global change. bioRxiv.
-<https://doi.org/10.1101/2021.08.12.456177>
+associations of dissolved organic matter under global change.
+***bioRxiv***. <https://doi.org/10.1101/2021.08.12.456177>
 
 Hu A, Choi M, Tanentzap AJ, Liu J, Jang K-S, Lennon JT, Liu Y, Soininen
 J, Lu X, Zhang Y, Shen J, Wang J. 2022. Quantifying the associations
 between dissolved organic matter and microbes under global change.
-Nature communications.
+***Nature communications***.
