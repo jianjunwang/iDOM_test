@@ -17,9 +17,10 @@ Example data of a DOM compositional table (50 samples by 100 DOM molecules)
 data(DOM.data)
 }
 \references{
+Hu A, Choi M, Tanentzap AJ, Liu J, Jang K-S, Lennon JT, Liu Y, Soininen J, Lu X, Zhang Y, Shen J, Wang J. 2021.
+Quantifying microbial associations of dissolved organic matter under global change. \emph{bioRxiv}.
 
-
-Hu A, Choi M, Tanentzap AJ, Liu J, Jang K-S, Lennon JT, et al.
-Quantifying the associations between dissolved organic matter and microbes under global change. \emph{Nature communications} 2022.
+Hu A, Choi M, Tanentzap AJ, Liu J, Jang K-S, Lennon JT, Liu Y, Soininen J, Lu X, Zhang Y, Shen J, Wang J. 2022.
+Quantifying the associations between dissolved organic matter and microbes under global change. \emph{Nature communications}.
 }
 \keyword{datasets}

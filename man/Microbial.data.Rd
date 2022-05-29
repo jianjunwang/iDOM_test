@@ -5,7 +5,7 @@
 \alias{Microbial.data}
 \title{Microbial community data}
 \format{
-The format for community data is a data.frame with samples in the rows and species in the columns.
+The format for Microbial community data is a data.frame with samples in the rows and species in the columns.
 }
 \source{
 \url{https://doi.org/10.1038/ncomms13960}.
@@ -14,16 +14,19 @@ The format for community data is a data.frame with samples in the rows and speci
 Microbial.data
 }
 \description{
-Example data of a bacterial compositional table (50 samples by 100 bacterial species)
+Example data of a Microbial compositional table (50 samples by 100 bacterial species)
 }
 \examples{
 data(Microbial.data)
 }
 \references{
-Wang J, Pan F, Soininen J, et al. Nutrient enrichment modifies temperature-biodiversity relationships in large-scale field experiments.
-\emph{Nature Communications}, 2016, 7(1): 1-9.
+Wang J, Pan F, Soininen J, Heino J, Shen J. 2016.
+Nutrient enrichment modifies temperature-biodiversity relationships in large-scale field experiments. \emph{Nature Communications} 7:1-9.
 
-Hu A, Choi M, Tanentzap AJ, Liu J, Jang K-S, Lennon JT, et al.
-Quantifying the associations between dissolved organic matter and microbes under global change. \emph{Nature communications} 2022.
+Hu A, Choi M, Tanentzap AJ, Liu J, Jang K-S, Lennon JT, Liu Y, Soininen J, Lu X, Zhang Y, Shen J, Wang J. 2021.
+Quantifying microbial associations of dissolved organic matter under global change. \emph{bioRxiv}.
+
+Hu A, Choi M, Tanentzap AJ, Liu J, Jang K-S, Lennon JT, Liu Y, Soininen J, Lu X, Zhang Y, Shen J, Wang J. 2022.
+Quantifying the associations between dissolved organic matter and microbes under global change. \emph{Nature communications}.
 }
 \keyword{datasets}

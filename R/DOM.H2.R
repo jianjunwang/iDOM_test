@@ -61,11 +61,8 @@ DOM.H2 <- function(Comm.Microbe,Comm.DOM,occurrence.threshold = 0.5,threshold.r 
   colnames(Comm.DOM.total) = paste("DOM", colnames(Comm.DOM.total), sep="_")
   
   ####
-  Comm.Microbe.pa = decostand(Comm.Microbe, method = "pa")
-  Comm.Microbe.keep = Comm.Microbe.total[, colSums(Comm.Microbe.pa) >= nrow(Comm.Microbe.pa) * occurrence.threshold]
-  
-  Comm.DOM.pa = decostand(Comm.DOM, method = "pa")
-  Comm.DOM.keep = Comm.DOM.total[, colSums(Comm.DOM.pa) >= nrow(Comm.DOM.pa) * occurrence.threshold]
+  Comm.Microbe.keep = Comm.Microbe.total[, colSums(Comm.Microbe.total > 0) >= nrow(Comm.Microbe.total) * occurrence.threshold]
+  Comm.DOM.keep = Comm.DOM.total[, colSums(Comm.DOM.total > 0) >= nrow(Comm.DOM.total) * occurrence.threshold]
   
   if (identical(rownames(Comm.Microbe.keep),rownames(Comm.DOM.keep))) {
     Comm.Bac.DOM = cbind(Comm.Microbe.keep, Comm.DOM.keep)
@@ -119,7 +116,6 @@ DOM.H2 <- function(Comm.Microbe,Comm.DOM,occurrence.threshold = 0.5,threshold.r 
         rownames(nulls[[i]]) = rownames(adj.cor.int)
         
         nulls.site[[i]] <- nulls[[i]][colnames(site.Bac),colnames(site.DOM)];dim(nulls.site[[i]])
-        # print(dim(nulls.site[[i]]))
       }
       
       index.obs = bipartite::networklevel(adj.cor.int.site, weighted = T, index = weighted.indices) 
@@ -132,7 +128,7 @@ DOM.H2 <- function(Comm.Microbe,Comm.DOM,occurrence.threshold = 0.5,threshold.r 
       index.obs.p = ifelse(praw > 0.5, 1-praw, praw)
       index = data.frame(Index = names(index.obs), Observed = index.obs, Standardised = index.ses, P.value = index.obs.p,
                          Network.type = class, 
-                         Site = rownames(Comm.Bac.DOM.site))
+                         Sample = rownames(Comm.Bac.DOM.site))
       rownames(index) = NULL
       
       if (ii == 1 & jj == 1) {
@@ -140,8 +136,16 @@ DOM.H2 <- function(Comm.Microbe,Comm.DOM,occurrence.threshold = 0.5,threshold.r 
       }else{
         Index = rbind(Index,index)
       }
-      # print(jj)
+      
+      if (jj %% 5 == 0) {
+        print(paste0("Sample:",jj,"; ","Null model type:",classes[ii]))
+      }
     }
   }
   return(Index)
 }
+
+
+
+
+
