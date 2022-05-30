@@ -4,7 +4,7 @@
 \name{iDOM-package}
 \alias{iDOM}
 \alias{iDOM-package}
-\title{iDOM: Package for Dissolved organic matter analysis}
+\title{iDOM: Ecological networks of dissolved organic matter and microorganisms under global change}
 \description{
 The \strong{iDOM} package provides tools for Dissolved organic matter (DOM) analysis. The package includes functions for analyzing the assembly processes, transformation and microbial associations of DOM.
 }

@@ -1,5 +1,5 @@
 Package: iDOM
-Title: Package for Dissolved organic matter analysis
+Title: Ecological networks of dissolved organic matter and microorganisms under global change
 Version: 0.1.0
 Authors@R: c(
     person("Jianjun", "Wang", email = "jjwang@niglas.ac.cn", role = c("aut","cre"),comment = c(ORCID = "0000-0001-7039-7136")),
