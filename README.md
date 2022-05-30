@@ -3,7 +3,8 @@
 
 # iDOM
 
-Package for Dissolved organic matter (DOM) analysis.
+Ecological networks of dissolved organic matter and microorganisms under
+global change.
 
 ## About
 

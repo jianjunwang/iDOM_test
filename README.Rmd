@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 ```
 
 # iDOM
-Package for Dissolved organic matter (DOM) analysis. 
+Ecological networks of dissolved organic matter and microorganisms under global change. 
 
 ## About
 The package includes functions for analyzing the assembly processes, transformation and microbial associations of DOM.
