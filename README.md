@@ -8,8 +8,7 @@ global change.
 
 ## About
 
-The package includes functions for analyzing the assembly processes,
-transformation and microbial associations of DOM.
+The package includes functions for analyzing the thermal responses, assembly processes, transformation and microbial associations of DOM.
 
 Package maintainer: Jianjun Wang(<jjwang@niglas.ac.cn>)
 
@@ -59,4 +58,4 @@ associations of dissolved organic matter under global change.
 Hu A, Choi M, Tanentzap AJ, Liu J, Jang K-S, Lennon JT, Liu Y, Soininen
 J, Lu X, Zhang Y, Shen J, Wang J. 2022. Quantifying the associations
 between dissolved organic matter and microbes under global change.
-***Nature communications***.
+***Nature communications***. <https://www.nature.com/articles/s41467-022-31251-1>
