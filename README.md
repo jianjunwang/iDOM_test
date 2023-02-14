@@ -42,7 +42,7 @@ network-level specialization of all interacting trophic levels in
 DOM-microbe bipartite networks, including full, negative and positive
 networks.
 
-[iCTR]: The function of iCTR is relevant to Hu et al. (under review). The manuscript will be available as preprint soon. The code will be updated upon acceptance.
+**iCTR**: The function of iCTR is relevant to Hu et al. (under review). The manuscript will be available as preprint soon. The code will be updated upon acceptance.
 
 ## References
 
