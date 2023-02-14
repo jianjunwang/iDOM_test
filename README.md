@@ -59,3 +59,5 @@ Hu A, Choi M, Tanentzap AJ, Liu J, Jang K-S, Lennon JT, Liu Y, Soininen
 J, Lu X, Zhang Y, Shen J, Wang J. 2022. Quantifying the associations
 between dissolved organic matter and microbes under global change.
 ***Nature communications***. <https://www.nature.com/articles/s41467-022-31251-1>
+
+Hu A, Jang K-S, Meng F, Stegen J, Tanentzap AJ, Choi M, Lennon JT, Soininen J, and Wang J. 2022. Microbial and Environmental Processes Shape the Link between Organic Matter Functional Traits and Composition. ***Environmental Science & Technology***. <https://pubs.acs.org/doi/abs/10.1021/acs.est.2c01432>
