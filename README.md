@@ -12,8 +12,8 @@ The package includes functions for analyzing the thermal responses, assembly pro
 
 Package maintainer: Jianjun Wang(<jjwang@niglas.ac.cn>)
 
-Developers: Ang Hu(<anghu@hunau.edu.cn>), Fanfan
-Meng(<mengfanfan19@mails.ucas.ac.cn>)
+Developers: Ang Hu, Fanfan
+Meng
 
 ## Installation
 
