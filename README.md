@@ -41,20 +41,37 @@ network-level specialization of all interacting trophic levels in
 DOM-microbe bipartite networks, including full, negative and positive
 networks.
 
-**iCTR**: The function of iCTR is relevant to Hu et al. (under review). The manuscript will be available as preprint soon. The code will be updated upon acceptance.
+**iCER**: The function of iCTR is relevant to Hu et al. (under review). The manuscript will be available as preprint soon. The code will be updated upon acceptance.
 
 ## References
 
-Wang J, Pan F, Soininen J, Heino J, Shen J. 2016. Nutrient enrichment
-modifies temperature-biodiversity relationships in large-scale field
-experiments. ***Nature Communications*** 7:1-9.
-<https://doi.org/10.1038/ncomms13960>
+A Hu, K-S Jang, A J Tanentzap, W Zhao, J T Lennon, J Liu, M Li, J
+Stegen, M Choi, Y Lu, X Feng, and J Wang. 2024. Thermal responses of
+dissolved organic matter under global change. ***Nature
+communications***. <https://www.nature.com/articles/s41467-024-44813-2>
 
-Hu A, Choi M, Tanentzap AJ, Liu J, Jang K-S, Lennon JT, Liu Y, Soininen
-J, Lu X, Zhang Y, Shen J, Wang J. 2021. Quantifying microbial
-associations of dissolved organic matter under global change.
-***bioRxiv***. <https://doi.org/10.1101/2021.08.12.456177>
+A Hu, M Choi, A J Tanentzap, J Liu, K-S Jang, J T Lennon, Y Liu, J
+Soininen, X Lu, Y Zhang, J Shen, and J Wang. 2022. Ecological networks
+of dissolved organic matter and microorganisms under global change.
+***Nature communications***.
+<https://www.nature.com/articles/s41467-022-31251-1>
 
-Hu A, Choi M, Tanentzap AJ, Liu J, Jang K-S, Lennon JT, Liu Y, Soininen J, Lu X, Zhang Y, Shen J, Wang J. 2022. Ecological networks of dissolved organic matter and microorganisms under global change. ***Nature communications***. <https://www.nature.com/articles/s41467-022-31251-1>
+A Hu, F Meng, A J Tanentzap, K-S Jang, and J Wang. 2023. Dark Matter
+Enhances Interactions within Both Microbes and Dissolved Organic Matter
+under Global Change. ***Environmental Science & Technology***.
+<https://pubs.acs.org/doi/10.1021/acs.est.2c05052>
 
-Hu A, Jang K-S, Meng F, Stegen J, Tanentzap AJ, Choi M, Lennon JT, Soininen J, and Wang J. 2022. Microbial and Environmental Processes Shape the Link between Organic Matter Functional Traits and Composition. ***Environmental Science & Technology***. <https://pubs.acs.org/doi/abs/10.1021/acs.est.2c01432>
+A Hu, K-S Jang, F Meng, J Stegen, A J Tanentzap, M Choi, J T Lennon, J
+Soininen, and J Wang. 2022. Microbial and Environmental Processes Shape
+the Link between Organic Matter Functional Traits and Composition.
+***Environmental Science & Technology***.
+<https://pubs.acs.org/doi/abs/10.1021/acs.est.2c01432>
+
+F Meng, A Hu, K-S Jang, and J Wang. 2024. iDOM: Statistical analysis of
+dissolved organic matter based on high-resolution mass spectrometry.
+***Research Square***. <https://doi.org/10.21203/rs.3.rs-4660944/v1>
+
+F Meng, A Hu, K-S Jang, and J Wang. 2025. iDOM: Statistical analysis of 
+dissolved organic matter characterized by high‐resolution mass spectrometry. 
+***mLife***. <https://doi.org/10.1002/mlf2.70002>.
+
